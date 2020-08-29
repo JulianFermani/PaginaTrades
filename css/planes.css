@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+
+.logo{
+    margin: 40px 0px 0px 0px;
+
+}
+
+header {
+    width: 100%;
+}
+
+header nav{
+    overflow: hidden;
+    text-align: right;
+}
+
+header nav ul{
+    list-style: none;
+    display: inline-block;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #000000;
+    transition: color .5;
+}
+
+a:hover {
+    color: #0622c1;
+}
+
+/* Termina Header*/
+
+
+/* Tabla de Planes*/
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.contenedor-planes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+}
+
+.tabla-planes{
+    width: 32%;
+    transition: transform .5 ease;
+    -webkit-perspective: 2000px;
+	perspective: 2000px;
+}
+
+.tabla-planes:hover{
+    transform: scale(1.07);
+}
+
+.precios-planes{
+    background: #013238;
+    text-align: center;
+    position: relative;
+    height: 400px;
+    -webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	transition: .3s ease;
+}
+
+.precios-planes-mensual{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #ffffff;
+}
+
+.precios-planes-cabeza{
+    color: #173d50;
+    padding: 30px 0px;
+}
+
+.precios-planes-cabeza h2{
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.precios-planes-cabeza h3{
+    font-size: 60px;
+    font-weight: 400;
+    display: inline;
+}
+
+.precios-planes-cabeza h3 sup{
+    font-size: 20px;
+    color: #abb8c0;
+    font-weight: 600;
+}
+
+.precios-planes-cabeza h3 sub{
+    font-size: 13px;
+}
+
+.lista-planes{
+    background: #f1f3f5;
+    padding: 10px 0;
+}
+
+.lista-planes li:nth-child(2n){
+    background: #ffffff;
+}
+
+.boton-planes{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    background: #0c1f28;
+    color: #ffffff;
+    margin: 12px 0 0 0;
+}
+
+/* Termina Tabla de Planes*/
+
+/* Empieza Footer */
+
+footer{
+    width: 100%;
+    padding: 20px 0px;
+    background: #0f0f0f;
+}
+
+footer h3{
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+    color: #fafafa;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    border-radius: 100%;
+    /*background: #0ddf05;*/
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.footer-social-icons ul li a{
+    color: #272727;
+    font-size: 25px;
+}
+
+.footer-social-icons ul li a i{
+    line-height: 50px;
+}
+
+
+
+/* Termina Footer*/
